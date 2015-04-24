@@ -1,15 +1,16 @@
 Package.describe({
+  name: 'tel:meteor-immutable',
   summary: "Immutable Data Collections for Javascript.",
-  version: "2.0.17",
-  git: "https://github.com/kraf/meteor-immutable.git"
+  version: "3.7.2",
+  git: "https://github.com/tel/meteor-immutable.git"
 });
 
 Npm.depends({
-	"immutable": "2.0.16"
+  "immutable": "3.7.2"
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom("METEOR@0.9.0.1");
+  api.versionsFrom('1.1.0.2');
   api.addFiles("vendor/Immutable.js", "client");
   api.addFiles("lib/require-immutable.js", "server");
   api.export("Immutable", ["server", "client"]);
