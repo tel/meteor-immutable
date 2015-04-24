@@ -1,7 +1,7 @@
 Package.describe({
   name: 'tel:meteor-immutable',
   summary: "Immutable Data Collections for Javascript.",
-  version: "3.7.2",
+  version: "3.7.21",
   git: "https://github.com/tel/meteor-immutable.git"
 });
 
